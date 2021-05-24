@@ -51,6 +51,8 @@ namespace Ucak_Bilet_Rezervasyon_Sistemi
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -59,6 +61,8 @@ namespace Ucak_Bilet_Rezervasyon_Sistemi
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.maskedTextBox1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
@@ -69,7 +73,7 @@ namespace Ucak_Bilet_Rezervasyon_Sistemi
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(21, 173);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(438, 335);
+            this.groupBox1.Size = new System.Drawing.Size(474, 335);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Uçuş Bilgileri";
@@ -165,7 +169,7 @@ namespace Ucak_Bilet_Rezervasyon_Sistemi
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(578, 173);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(443, 335);
+            this.groupBox2.Size = new System.Drawing.Size(527, 335);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Yolcu Bilgileri";
@@ -179,6 +183,7 @@ namespace Ucak_Bilet_Rezervasyon_Sistemi
             this.button1.TabIndex = 8;
             this.button1.Text = "Kaydet";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // textBox1
             // 
@@ -234,10 +239,11 @@ namespace Ucak_Bilet_Rezervasyon_Sistemi
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.HorizontalScrollbar = true;
             this.listBox1.ItemHeight = 29;
-            this.listBox1.Location = new System.Drawing.Point(21, 532);
+            this.listBox1.Location = new System.Drawing.Point(21, 514);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(1084, 178);
+            this.listBox1.Size = new System.Drawing.Size(1084, 120);
             this.listBox1.TabIndex = 9;
             // 
             // panel1
@@ -269,6 +275,26 @@ namespace Ucak_Bilet_Rezervasyon_Sistemi
             this.label8.Size = new System.Drawing.Size(465, 73);
             this.label8.TabIndex = 8;
             this.label8.Text = "İlhan Hava Yolları";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(399, 89);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(69, 70);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "<>";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(390, 178);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(78, 29);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "label9";
+            this.label9.Visible = false;
             // 
             // Form1
             // 
@@ -317,6 +343,8 @@ namespace Ucak_Bilet_Rezervasyon_Sistemi
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label9;
     }
 }
 
