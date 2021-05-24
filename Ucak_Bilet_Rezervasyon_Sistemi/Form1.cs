@@ -16,5 +16,10 @@ namespace Ucak_Bilet_Rezervasyon_Sistemi
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
